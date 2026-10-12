@@ -1,0 +1,124 @@
+/* Estilos complementarios para las funciones incorporadas en Sprint 2. */
+
+.filtros-catalogo {
+  display: grid;
+  grid-template-columns: minmax(220px, 2fr) minmax(180px, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.campo-filtro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.campo-filtro label {
+  font-weight: 600;
+}
+
+.campo-filtro input,
+.campo-filtro select {
+  width: 100%;
+  min-height: 42px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cbd2dc;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  font: inherit;
+}
+
+.usuario-saludo {
+  align-self: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nota-demostracion {
+  margin-top: 0.75rem;
+  color: #5b6472;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.lista-pedidos {
+  display: grid;
+  gap: 1rem;
+}
+
+.pedido {
+  padding: 1.25rem;
+  border: 1px solid #e1e5eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.pedido-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e5eb;
+}
+
+.pedido-encabezado h2 {
+  margin: 0 0 0.35rem;
+}
+
+.pedido-encabezado p {
+  margin: 0;
+  color: #5b6472;
+}
+
+.estado-pedido {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 0.85rem;
+}
+
+.pedido-productos {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pedido-productos li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pedido .resumen-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e5eb;
+}
+
+@media (max-width: 760px) {
+  .filtros-catalogo {
+    grid-template-columns: 1fr;
+  }
+
+  .pedido-encabezado {
+    flex-direction: column;
+  }
+
+  .pedido-productos li {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
